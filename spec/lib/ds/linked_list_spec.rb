@@ -44,5 +44,21 @@ RSpec.describe LinkedList do
     it 'has nil tail' do
       expect(linked_list.tail).to be_nil
     end
+
+    describe '#add' do
+      before do
+        linked_list.add(1)
+      end
+
+      describe 'adds a node to the list' do
+        it 'has a head' do
+          expect(linked_list.head).not_to be_nil
+        end
+
+        it 'has a tail' do
+          expect(linked_list.tail).not_to be_nil
+        end
+      end
+    end
   end
 end
