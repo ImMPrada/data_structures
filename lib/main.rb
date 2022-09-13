@@ -1,4 +1,1 @@
-require_relative './ds/linked_list'
-
-Ds::LinkedList.new
-Ds::Node.new
+require_relative './scripts/linked_list'
