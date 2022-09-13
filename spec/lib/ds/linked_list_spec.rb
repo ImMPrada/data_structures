@@ -29,4 +29,20 @@ RSpec.describe LinkedList do
       end
     end
   end
+
+  describe 'class LinkedList' do
+    let(:linked_list) { LinkedList.new }
+
+    it 'returns a LinkedList object' do
+      expect(linked_list).to be_a LinkedList
+    end
+
+    it 'has nil head' do
+      expect(linked_list.head).to be_nil
+    end
+
+    it 'has nil tail' do
+      expect(linked_list.tail).to be_nil
+    end
+  end
 end
