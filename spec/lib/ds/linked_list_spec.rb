@@ -60,5 +60,13 @@ RSpec.describe LinkedList do
         end
       end
     end
+
+    describe '#get' do
+      it 'returns the value of the node at the specified index' do
+        linked_list.add(1)
+        linked_list.add(2)
+        expect(linked_list.get(1)).to eq 2
+      end
+    end
   end
 end
