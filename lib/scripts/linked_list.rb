@@ -15,10 +15,16 @@ class LinkedList
   end
 
   def get(index)
+    get_node_at(index).value
+  end
+
+  private
+
+  def get_node_at(index)
     current_node = @head
     (0...index).each { current_node = current_node.next_node }
 
-    current_node.value
+    current_node
   end
 end
 
