@@ -70,18 +70,28 @@ RSpec.describe LinkedList do
     end
 
     describe '#add_at' do
+      let(:new_head_value) { 11 }
+      let(:new_middle_value) { 13 }
+      let(:new_tail_value) { 25 }
+
       before do
         linked_list.add(5)
         linked_list.add(3)
-        list.add_at(1, 11)
-        list.add_at(0, 13)
+        linked_list.add_at(0, new_head_value)
+        linked_list.add_at(3, new_tail_value)
+        linked_list.add_at(1, new_middle_value)
       end
 
-      it 'returns right values' do
-        expected1 = linked_list.get(2) == 11
-        expected2 = linked_list.get(3) == 5
+      it 'updates head' do
+        expect(linked_list.head.value).to be(new_head_value)
+      end
 
-        expect(expected1 && expected2).to be true
+      it 'updates a middle value' do
+        expect(linked_list.get(1)).to be(new_middle_value)
+      end
+
+      it 'updates tail' do
+        expect(linked_list.tail.value).to be(new_tail_value)
       end
     end
   end
