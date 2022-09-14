@@ -68,5 +68,21 @@ RSpec.describe LinkedList do
         expect(linked_list.get(1)).to eq 2
       end
     end
+
+    describe '#add_at' do
+      before do
+        linked_list.add(5)
+        linked_list.add(3)
+        list.add_at(1, 11)
+        list.add_at(0, 13)
+      end
+
+      it 'returns right values' do
+        expected1 = linked_list.get(2) == 11
+        expected2 = linked_list.get(3) == 5
+
+        expect(expected1 && expected2).to be true
+      end
+    end
   end
 end
