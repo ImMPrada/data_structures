@@ -32,7 +32,6 @@ class LinkedList
     node_h = get_node_at(index - 1)
     node_i = get_node_at(index)
 
-
     return add(number) if node_i.nil?
 
     node_to_add.next_node = node_i

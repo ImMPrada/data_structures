@@ -31,10 +31,10 @@ RSpec.describe LinkedList do
   end
 
   describe 'class LinkedList' do
-    let(:linked_list) { LinkedList.new }
+    let(:linked_list) { described_class.new }
 
     it 'returns a LinkedList object' do
-      expect(linked_list).to be_a LinkedList
+      expect(linked_list).to be_a described_class
     end
 
     it 'has nil head' do
