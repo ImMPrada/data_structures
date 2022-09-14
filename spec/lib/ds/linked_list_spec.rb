@@ -93,6 +93,10 @@ RSpec.describe LinkedList do
       it 'updates tail' do
         expect(linked_list.tail.value).to be(new_tail_value)
       end
+
+      it 'updates size' do
+        expect(linked_list.size).to be(5)
+      end
     end
   end
 end
