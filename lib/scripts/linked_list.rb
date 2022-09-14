@@ -44,6 +44,14 @@ class LinkedList
     node_h.next_node = node_to_add
   end
 
+  def remove(index)
+    if index.zero?
+      node_to_remove = @head
+      @head = node_to_remove.next_node
+      return
+    end
+  end
+
   private
 
   def get_node_at(index)
