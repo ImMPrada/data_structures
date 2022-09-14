@@ -45,19 +45,14 @@ class LinkedList
   end
 
   def remove(index)
-    if index.zero?
-      node_to_remove = @head
-      @head = node_to_remove.next_node
-      return
-    end
+    return remove_head if index.zero?
 
     node_i = get_node_at(index)
 
-    if node_i.next_node.nil?
-      remove_tail(index)
-      return
-    end
+    return remove_tail(index) if node_i.next_node.nil?
 
+    node_h = get_node_at(index - 1)
+    node_h.next_node = node_i.next_node
   end
 
   private
@@ -67,6 +62,11 @@ class LinkedList
     (0...index).each { current_node = current_node.next_node }
 
     current_node
+  end
+
+  def remove_head
+    node_to_remove = @head
+    @head = node_to_remove.next_node
   end
 
   def remove_tail(index)
