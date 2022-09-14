@@ -20,6 +20,30 @@ class LinkedList
     get_node_at(index).value
   end
 
+  def add_at(index, number)
+    node_to_add = Node.new(number)
+
+    if index.zero?
+      node_to_add.next_node = @head
+      @head = node_to_add
+      return
+    end
+
+    node_h = get_node_at(index - 1)
+    node_i = get_node_at(index)
+
+    return if node_h.nil? && node_i.nil?
+
+    if node_i.nil?
+      @tail.next_node = node_to_add
+      @tail = node_to_add
+      return
+    end
+
+    node_to_add.next_node = node_i
+    node_h.next_node = node_to_add
+  end
+
   private
 
   def get_node_at(index)
