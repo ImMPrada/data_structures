@@ -12,4 +12,8 @@ class Queue
 
     @queue.remove(0)
   end
+
+  def empty?
+    @queue.empty?
+  end
 end
