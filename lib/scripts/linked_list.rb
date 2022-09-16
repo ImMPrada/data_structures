@@ -60,6 +60,8 @@ class LinkedList
   private
 
   def get_node_at(index)
+    return nil if empty? || index >= @size
+
     current_node = @head
     (0...index).each { current_node = current_node.next_node }
 
