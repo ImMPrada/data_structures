@@ -1,8 +1,6 @@
-require_relative 'linked_list'
-
 class Queue
   def initialize
-    @queue = LinkedList.new
+    @queue = LinkedList::SingleLinkedList.new
   end
 
   def add(number)
