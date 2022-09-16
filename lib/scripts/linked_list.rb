@@ -30,14 +30,14 @@ class LinkedList
   end
 
   def add_at(index, number)
-    return nil unless (0...@size).cover?(index)
+    return nil unless (0..@size).cover?(index)
 
     node_to_add = Node.new(number)
 
     return update_head(node_to_add) if index.zero?
 
     node_h = get_node_at(index - 1)
-    node_i = get_node_at(index)
+    node_i = node_h.next_node
 
     return add(number) if node_i.nil?
 
@@ -52,11 +52,11 @@ class LinkedList
 
     return remove_head if index.zero?
 
-    node_i = get_node_at(index)
+    node_h = get_node_at(index - 1)
+    node_i = node_h.next_node
 
     return remove_tail(index) if node_i.next_node.nil?
 
-    node_h = get_node_at(index - 1)
     node_h.next_node = node_i.next_node
     update_size(:down)
     node_i.value
