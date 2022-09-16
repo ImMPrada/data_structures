@@ -48,6 +48,8 @@ class LinkedList
   end
 
   def remove(index)
+    return nil unless (0...@size).cover?(index)
+
     return remove_head if index.zero?
 
     node_i = get_node_at(index)
