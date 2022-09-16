@@ -1,8 +1,6 @@
-require_relative 'linked_list'
-
 class Stack
   def initialize
-    @stack = LinkedList.new
+    @stack = LinkedList::SingleLinkedList.new
     @size = 0
   end
 
