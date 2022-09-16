@@ -97,6 +97,10 @@ RSpec.describe LinkedList do
       it 'updates size' do
         expect(linked_list.size).to be(5)
       end
+
+      it 'returns added value' do
+        expect(linked_list.add(25)).to be(25)
+      end
     end
 
     describe '#remove' do
@@ -110,6 +114,10 @@ RSpec.describe LinkedList do
       it 'removes the head' do
         linked_list.remove(0)
         expect(linked_list.head.value).to be(3)
+      end
+
+      it 'returns removed value' do
+        expect(linked_list.remove(0)).to be(5)
       end
 
       it 'removes a middle value' do
