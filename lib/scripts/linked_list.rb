@@ -24,7 +24,9 @@ class LinkedList
   end
 
   def get(index)
-    get_node_at(index).value
+    node_found = get_node_at(index)
+
+    node_found.nil? ? nil : node_found.value
   end
 
   def add_at(index, number)
@@ -60,7 +62,7 @@ class LinkedList
   private
 
   def get_node_at(index)
-    return nil if empty? || index >= @size
+    return nil if empty? || !(0...@size).cover?(index)
 
     current_node = @head
     (0...index).each { current_node = current_node.next_node }
