@@ -12,4 +12,11 @@ RSpec.describe Stack do
       expect(stack.empty?).to be true
     end
   end
+
+  describe '#push' do
+    it 'adds an element to the stack' do
+      stack.push(1)
+      expect(stack.empty?).to be false
+    end
+  end
 end
