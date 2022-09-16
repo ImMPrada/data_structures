@@ -30,7 +30,7 @@ class LinkedList
   end
 
   def add_at(index, number)
-    return nil if index > @size
+    return nil unless (0...@size).cover?(index)
 
     node_to_add = Node.new(number)
 
