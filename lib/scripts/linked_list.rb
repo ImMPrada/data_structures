@@ -1,5 +1,5 @@
 class LinkedList
-  attr_accessor :head, :tail, :size
+  attr_reader :head, :tail, :size
 
   def initialize
     @head = nil
@@ -7,15 +7,20 @@ class LinkedList
     @size = 0
   end
 
+  def empty?
+    @size.zero?
+  end
+
   def add(number)
-    if @head.nil?
+    if empty?
       @head = Node.new(number)
       @tail = @head
     else
       @tail.next_node = Node.new(number)
       @tail = @tail.next_node
     end
-    upgrade_size
+    update_size
+    number
   end
 
   def get(index)
@@ -36,7 +41,8 @@ class LinkedList
 
     node_to_add.next_node = node_i
     node_h.next_node = node_to_add
-    upgrade_size
+    update_size
+    number
   end
 
   def remove(index)
@@ -48,7 +54,7 @@ class LinkedList
 
     node_h = get_node_at(index - 1)
     node_h.next_node = node_i.next_node
-    upgrade_size(:down)
+    update_size(:down)
   end
 
   private
@@ -60,27 +66,27 @@ class LinkedList
     current_node
   end
 
-  def upgrade_size(move = :up)
+  def update_size(move = :up)
     move == :down ? @size -= 1 : @size += 1
   end
 
   def update_head(node_to_add)
     node_to_add.next_node = @head
     @head = node_to_add
-    upgrade_size
+    update_size
   end
 
   def remove_head
     node_to_remove = @head
     @head = node_to_remove.next_node
-    upgrade_size(:down)
+    update_size(:down)
   end
 
   def remove_tail(index)
     new_tail = get_node_at(index - 1)
     new_tail.next_node = nil
     @tail = new_tail
-    upgrade_size(:down)
+    update_size(:down)
   end
 end
 
