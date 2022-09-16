@@ -59,6 +59,7 @@ class LinkedList
     node_h = get_node_at(index - 1)
     node_h.next_node = node_i.next_node
     update_size(:down)
+    node_i.value
   end
 
   private
@@ -86,6 +87,7 @@ class LinkedList
     node_to_remove = @head
     @head = node_to_remove.next_node
     update_size(:down)
+    node_to_remove.value
   end
 
   def remove_tail(index)
@@ -93,6 +95,7 @@ class LinkedList
     new_tail.next_node = nil
     @tail = new_tail
     update_size(:down)
+    @tail.value
   end
 end
 
