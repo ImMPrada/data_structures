@@ -115,7 +115,7 @@ RSpec.describe LinkedList::SingleLinkedList do
       expect(linked_list.tail.value).to be(2)
     end
   end
-  
+
   describe '#generate_array' do
     before do
       linked_list.add(5)
