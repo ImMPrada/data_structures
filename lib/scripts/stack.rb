@@ -1,4 +1,6 @@
 class Stack
+  attr_reader :min
+
   def initialize
     @stack = LinkedList::SingleLinkedList.new
     @size = 0
