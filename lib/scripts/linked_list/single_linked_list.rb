@@ -63,6 +63,10 @@ module LinkedList
       node_i.value
     end
 
+    def generate_array
+      build_array
+    end
+
     private
 
     def get_node_at(index)
@@ -97,6 +101,20 @@ module LinkedList
       @tail = new_tail
       update_size(:down)
       @tail.value
+    end
+
+    def build_array
+      return [] if empty?
+
+      array = []
+      current_node = @head
+
+      until current_node.nil?
+        array << current_node.value
+        current_node = current_node.next_node
+      end
+
+      array
     end
   end
 end
