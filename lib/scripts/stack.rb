@@ -13,7 +13,10 @@ class Stack
 
   def pop
     @size -= 1
-    @stack.remove(0)
+    removed_value = @stack.remove(0)
+    update_min_by_pop(removed_value)
+
+    removed_value
   end
 
   def empty?
@@ -26,5 +29,11 @@ class Stack
     return @min = value if @min.nil?
 
     @min = value if value < @min
+  end
+
+  def update_min_by_pop(value)
+    return @min = nil if @size.zero?
+
+    @min = @stack.generate_array.min if value == @min
   end
 end
