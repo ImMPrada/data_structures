@@ -20,6 +20,8 @@ RSpec.describe LinkedList::Double do
   describe '#add' do
     before do
       linked_list.add(1)
+      linked_list.add(1)
+      linked_list.add(1)
     end
 
     it 'has a head' do
@@ -32,6 +34,22 @@ RSpec.describe LinkedList::Double do
 
     it 'returns the value added' do
       expect(linked_list.add(2)).to eq 2
+    end
+
+    it 'has a head with a nil prev_node' do
+      expect(linked_list.head.prev_node).to be_nil
+    end
+
+    it 'has a tail with a nil next_node' do
+      expect(linked_list.tail.next_node).to be_nil
+    end
+
+    it 'has a head with a next_node' do
+      expect(linked_list.head.next_node).not_to be_nil
+    end
+
+    it 'has a tail with a prev_node' do
+      expect(linked_list.tail.prev_node).not_to be_nil
     end
   end
 
