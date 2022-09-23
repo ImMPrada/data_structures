@@ -2,7 +2,7 @@ class Stack
   attr_reader :min
 
   def initialize
-    @stack = LinkedList::SingleLinkedList.new
+    @stack = LinkedList::Single.new
     @size = 0
     @min = nil
   end

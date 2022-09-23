@@ -1,6 +1,6 @@
 require './spec/spec_helper'
 
-RSpec.describe LinkedList::SingleLinkedList do
+RSpec.describe LinkedList::Single do
   let(:linked_list) { described_class.new }
 
   describe 'when initialized' do

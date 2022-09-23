@@ -1,6 +1,6 @@
 class Queue
   def initialize
-    @queue = LinkedList::SingleLinkedList.new
+    @queue = LinkedList::Single.new
   end
 
   def add(number)

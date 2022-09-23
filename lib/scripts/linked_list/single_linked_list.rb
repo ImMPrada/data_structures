@@ -1,5 +1,5 @@
 module LinkedList
-  class SingleLinkedList
+  class Single
     attr_reader :head, :tail, :size
 
     def initialize
@@ -14,7 +14,7 @@ module LinkedList
 
     def add(number)
       if empty?
-        @head = LinkedList::Node.new(number)
+        @head = Node.new(number)
         @tail = @head
       else
         @tail.next_node = Node.new(number)
@@ -65,6 +65,10 @@ module LinkedList
 
     def generate_array
       build_array
+    end
+
+    def to_s
+      "Linkedlist transformed to an array: #{build_array}"
     end
 
     private
