@@ -115,4 +115,17 @@ RSpec.describe LinkedList::SingleLinkedList do
       expect(linked_list.tail.value).to be(2)
     end
   end
+
+  describe '#generate_array' do
+    before do
+      linked_list.add(5)
+      linked_list.add(3)
+      linked_list.add(2)
+      linked_list.add(1)
+    end
+
+    it 'returns an array with the values of the nodes' do
+      expect(linked_list.generate_array).to eq [5, 3, 2, 1]
+    end
+  end
 end
