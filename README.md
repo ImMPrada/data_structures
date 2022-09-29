@@ -1,7 +1,7 @@
 # data structures [![Codacy Badge](https://app.codacy.com/project/badge/Grade/f262aec0b9e942808d7f63f7351e4529)](https://www.codacy.com/gh/ImMPrada/data_structures/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ImMPrada/data_structures&amp;utm_campaign=Badge_Grade)
 
 <div>
- <h1 align='center' style=' h1 {
+ <h1 align='center' style='
    width: 100%;
    line-height: 20px;
    padding-top: 70px;
@@ -11,7 +11,7 @@
    color: rgb(52, 73, 94);
    transform-origin: bottom;
    animation: 4s cubic-bezier(.5, 0, .5, 1.2) 1s infinite bounce;
-  }'>Hello, world</h1>
+ '>Hello, world</h1>
 </div>
 
 ### This repo's language is:
