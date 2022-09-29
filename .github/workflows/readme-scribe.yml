@@ -1,9 +1,8 @@
 name: Update README
 
 on:
-  push:
-  schedule:
-    - cron: "0 */1 * * *"
+  pull_request:
+    types: [ closed, opened ]
 
 jobs:
   markscribe:
