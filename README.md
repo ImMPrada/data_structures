@@ -1,7 +1,6 @@
-<div>
- <h1  align="center">data structures</h1>
+<div align="center">
+ <h1>data structures</h1>
 </div>
-<div align="center" >
 <div align="center" >
   <a href="https://www.codacy.com/gh/ImMPrada/data_structures/dashboardutm_source=github.com&amp;utm_medium=referral&amp;utm_content=ImMPrada/data_structures&ap;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/f262aec0b9e942808d7f63f7351e4529"/>
 </div>
