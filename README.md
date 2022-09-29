@@ -1,7 +1,7 @@
 # data structures [![Codacy Badge](https://app.codacy.com/project/badge/Grade/f262aec0b9e942808d7f63f7351e4529)](https://www.codacy.com/gh/ImMPrada/data_structures/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ImMPrada/data_structures&amp;utm_campaign=Badge_Grade)
 
 <div>
- <style>
+ <style
   h1 {
    width: 100%;
    line-height: 20px;
@@ -12,7 +12,7 @@
    transform-origin: bottom;
    animation: 4s cubic-bezier(.5, 0, .5, 1.2) 1s infinite bounce;
   }
- </style>
+ />
  <h1>Hello, world</h1>
 </div>
 
