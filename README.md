@@ -13,7 +13,7 @@
    animation: 4s cubic-bezier(.5, 0, .5, 1.2) 1s infinite bounce;
   }
  />
- <h1>Hello, world</h1>
+ <h1 align='center'>Hello, world</h1>
 </div>
 
 ### This repo's language is:
