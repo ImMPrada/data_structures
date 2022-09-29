@@ -12,8 +12,9 @@
 
 <div align="left">
  <h3>Activity stats:</h3>
- <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/immprada/data_structures?style=for-the-badge">
+ <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/immprada/data_structures?style=for-the-badge">
+ </br>
+ <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr-raw/immprada/data_structures?style=for-the-badge">
  </br>
  <img alt="GitHub closed pull requests" src="https://img.shields.io/github/issues-pr-closed-raw/immprada/data_structures?color=green&style=for-the-badge">
 </div>
-
