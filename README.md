@@ -1,3 +1,6 @@
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f1d7e434133b4449a0512ba782952347)](https://app.codacy.com/gh/ImMPrada/data_structures?utm_source=github.com&utm_medium=referral&utm_content=ImMPrada/data_structures&utm_campaign=Badge_Grade_Settings)
+
 <div align="center">
  <h1>data structures</h1>
 </div>
