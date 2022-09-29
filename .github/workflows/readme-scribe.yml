@@ -2,7 +2,7 @@ name: Update README
 
 on:
   pull_request:
-    types: [ closed, open ]
+    types: [ closed, opened ]
 
 jobs:
   markscribe:
