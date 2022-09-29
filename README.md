@@ -13,7 +13,16 @@
    animation: 4s cubic-bezier(.5, 0, .5, 1.2) 1s infinite bounce;
   }
  />
- <h1 align='center'>Hello, world</h1>
+ <h1 align='center' styles=' h1 {
+   width: 100%;
+   line-height: 20px;
+   padding-top: 70px;
+   text-align: center;
+   font: 400 16px/1.5 Helvetica ,Arial ,sans-serif;
+   color: rgb(52, 73, 94);
+   transform-origin: bottom;
+   animation: 4s cubic-bezier(.5, 0, .5, 1.2) 1s infinite bounce;
+  }'>Hello, world</h1>
 </div>
 
 ### This repo's language is:
