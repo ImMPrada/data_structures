@@ -17,4 +17,5 @@
 - From code climate:
 ![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/ImMPrada/data_structures?style=for-the-badge)
 ![Code Climate technical debt](https://img.shields.io/codeclimate/tech-debt/ImMPrada/data_structures?style=for-the-badge)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/f262aec0b9e942808d7f63f7351e4529)](https://www.codacy.com/gh/ImMPrada/data_structures/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ImMPrada/data_structures&amp;utm_campaign=Badge_Grade)
 
